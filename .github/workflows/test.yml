@@ -14,10 +14,12 @@ jobs:
     - uses: actions/checkout@v2
     - run: yarn install
     - run: yarn run lint
-    # - run: yarn test
+    - run: yarn test
 
   test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: ./
+      with:
+        source: '{".tmp1/":null,".tmp2":"test",".tmp3/test/test.yml":{"test":{"test":["test",123]}}}'

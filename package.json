@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/levonet/action-TBD#readme",
   "dependencies": {
-    "@actions/core": "^1.4.0"
+    "@actions/core": "^1.4.0",
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.28.6",

@@ -69,3 +69,6 @@ typings/
 # local artifacts
 *~
 ~*
+
+# test
+.tmp*

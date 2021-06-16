@@ -1,6 +1,14 @@
 ---
-name: action-TBD
+name: action-config-blanks
 description: TBD
+inputs:
+  source:
+    description: |
+      A JSON key-value object. Where as the key is the file or directory name, and the value as the content of the file.
+    required: true
 runs:
   using: node12
   main: dist/index.js
+branding:
+  icon: file-text
+  color: gray-dark
