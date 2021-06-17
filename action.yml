@@ -1,10 +1,13 @@
 ---
 name: action-config-blanks
-description: TBD
+description: Creates files and directories using the JSON template.
 inputs:
   source:
     description: |
-      A JSON key-value object. Where as the key is the file or directory name, and the value as the content of the file.
+      A JSON key-value object.
+      Where as the key is the file or directory name, and the value as the content of the file.
+      The name of the directory must end in a slash.
+      If the content is `null`, the file is not created.
     required: true
 runs:
   using: node12
