@@ -11,7 +11,7 @@ If the content is `null`, the file is not created.
 To create a directory, the key must end with a slash. And content is not taken into account.
 
 ```yml
-- uses: levonet/action-config-blanks@master
+- uses: blablacar/action-config-blanks@master
   with:
     source: '{"a/b.txt":"a\nb","c/d.yml":{"a":{"b":"text"}},".tmp/":null}'
 # Create:
